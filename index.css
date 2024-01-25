@@ -1,0 +1,642 @@
+/* -----------------------------------------
+Hero Section
+----------------------------------------- */
+section.hero {
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* hero Img */
+
+section.hero .hero-img {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.hero .hero-img img {
+    height: 35rem;
+}
+
+/* hero text */
+
+section.hero .hero-txt {
+    flex: 1;
+}
+
+section.hero .hero-txt h1 {
+    font-family: "poppins";
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: -0.2rem;
+}
+
+section.hero .hero-txt p {
+    font-family: "montserrat";
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-left: 0.2rem;
+    margin-bottom: 1.8rem;
+}
+
+section.hero .hero-txt .icons {
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    align-items: center;
+}
+
+section.hero .hero-txt .icons img {
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* CTASS */
+.hero-txt .ctas{
+    display: flex;
+    justify-content: left;
+}
+a#hero-filled-cta {
+    font-weight: 700;
+    padding: 0.7rem 1.4rem;
+    border-radius: 70rem;
+    border: 0.2rem solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: black;
+    margin-right: 1rem;
+    box-shadow: 2px 2px 3px black;
+}
+
+a#hero-filled-cta:hover {
+    box-shadow: none;
+    transition: all ease-in-out 0.3s;
+
+
+}
+
+a#hero-cta {
+    font-weight: 700;
+    padding: 0.7rem 1.4rem;
+    border-radius: 70rem;
+    border: 0.2rem solid rgb(44, 47, 44);
+    color: black;
+    box-shadow: 2px 2px 3px black;
+
+}
+
+a#hero-cta:hover {
+    border: 0.2rem solid rgb(0, 0, 0);
+    background-color: black;
+    color: white;
+
+    transition: all ease-in-out 0.3s;
+}
+
+
+/* -----------------------------------------
+About Me Section
+----------------------------------------- */
+section.about-me {
+    margin-top: 15rem;
+}
+
+
+
+section.about-me .abt-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+/* img  */
+
+section.about-me .img-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.about-me img {
+    height: 30rem;
+}
+
+/* Text  */
+section.about-me .abt-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1.25rem;
+
+}
+
+section.about-me .abt-txt h3 {
+    font-family: "poppins";
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+section.about-me .abt-txt p {
+    font-family: "Roboto";
+    color: var(--grey-para-text);
+    line-height: 1.7rem;
+}
+
+a#abt-cta {
+    font-weight: 700;
+    padding: 0.7rem 1.4rem;
+    border-radius: 70rem;
+    border: 0.2rem solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 3px black;
+    background-color: black;
+}
+
+a#abt-cta:hover {
+    border: 0.2rem solid rgb(0, 0, 0);
+    color: white;
+    box-shadow: none;
+    transition: all ease-in-out 0.3s;
+}
+
+/* -----------------------------------------
+Software Proficiency
+----------------------------------------- */
+section.softwares {
+    margin-top: 7rem;
+}
+
+section.softwares p {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+section.softwares .software-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+section.softwares img {
+    width: 60px;
+    height: 60px;
+}
+
+/* -----------------------------------------
+testimonials
+----------------------------------------- */
+section.testimonials {
+    margin: 7rem 0;
+}
+
+section.testimonials .container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+
+}
+
+section.testimonials .container .client {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+section.testimonials .container .client img {
+    height: 15rem;
+}
+
+section.testimonials .container .client .txt {
+    text-align: center;
+}
+
+section.testimonials .container .client .txt h3 {
+    font-family: "poppins";
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--grey-para-text);
+    margin-bottom: .5rem;
+}
+
+section.testimonials .container .client .txt p {
+    font-family: "montserrat";
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+
+/* -----------------------------------------
+Questions and Answers
+----------------------------------------- */
+section.qns-ans {
+    max-width: 55%;
+    margin: auto;
+    margin-top: 0;
+
+}
+
+section.qns-ans .faq {
+    border: 1px solid rgb(195, 195, 195);
+}
+
+.qns-ans>p,
+.qns-ans>h1 {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.qns-ans>h1 {
+    letter-spacing: 3px;
+}
+
+.accordion {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+.accordion i {
+    font-size: 1.6rem;
+
+}
+
+.active,
+.accordion:hover {
+    background-color: #efefef;
+}
+
+.pannel {
+    padding: 0 2rem 2.5rem 2rem;
+    background-color: white;
+    overflow: hidden;
+    background-color: #efefef;
+    display: none;
+
+}
+
+.pannel p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+}
+
+.faq {
+    margin: 10px 0 0 0;
+}
+
+.faq.active {
+    border: none;
+}
+/* -----------------------------------------
+Responsive
+----------------------------------------- */
+/* Responsive styles for tablets (e.g., iPad) */
+/* @media(max-width: 1100px) {
+header{
+    display: none;
+}
+main{
+    display: none;
+}
+footer{
+    display: none;
+}
+} */
+    /* section.hero .hero-img img {
+        height: 25rem;
+    }
+
+    section.hero .hero-txt h1 {
+        font-size: 3rem;
+    }
+
+    section.hero .hero-txt p {
+        font-size: 1rem;
+    }
+    a#hero-filled-cta {
+        font-size: 0.5rem;
+        padding: 0.3rem 1rem;
+    }
+
+    a#hero-cta {
+        font-size: 0.5rem;
+        padding: 0.3rem 1rem;
+    }  */
+
+    /* -----------------------------------------
+ipad Responsive About Me Responsive
+----------------------------------------- */
+
+    /* section.about-me {
+        margin-top: 10rem;
+    }
+
+    section.about-me img {
+        height: 20rem;
+    }
+
+    section.about-me .abt-txt h3 {
+        font-size: 1.2rem;
+    }
+
+    section.about-me .abt-txt p {
+        font-size: 0.7rem;
+        line-height: 140%;
+    }
+    a#abt-cta {
+        font-size: 0.5rem;
+        padding: 0.3rem 1rem;
+
+    } */
+    /* -----------------------------------------
+ipad Responsive Softwares Responsive
+----------------------------------------- */
+
+    /* section.softwares {
+        margin-top: 5rem;
+    }
+    
+    section.softwares p{
+        font-size: 0.8rem;
+    }
+    section.softwares .software-icons{
+        gap: 1rem;
+    }
+
+    section.softwares img {
+        width: 40px;
+        height: 40px;
+    } */
+
+    /* -----------------------------------------
+Ipad Responsive Testimonials Responsive
+----------------------------------------- */
+    /* section.testimonials .container .client img {
+        height: 12rem;
+    }
+    section.testimonials .container .client .txt h3{
+        font-size: 1rem;
+    }
+    section.testimonials .container .client .txt p{
+        font-size: 0.7rem;
+    } */
+    /* -----------------------------------------
+Ipad Responsive FAQs Responsive
+----------------------------------------- */
+/* .accordion {
+    padding: 1rem 1.5rem;
+}
+.accordion i {
+    font-size: 1.2rem;
+
+}
+section.qns-ans button{
+    font-size: 0.8rem;
+}
+.pannel {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    margin-top: -.5rem;
+
+}
+section.qns-ans .pannel p{
+    font-size: 0.7rem;
+    
+} */
+
+
+/* -----------------------------------------
+Mobile Responsive styles for mobile devices
+----------------------------------------- */
+/* @media (max-width: 768px) {
+    section.hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    section.hero .hero-img img {
+        height: 20rem;
+    }
+
+    section.hero .hero-txt h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    section.hero .hero-txt p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    section.hero .hero-txt .icons {
+        justify-content: center;
+    }
+section.hero .ctas{
+    justify-content: center;
+} */
+    /* -----------------------------------------
+Mobile Responsive About Me Responsive
+----------------------------------------- */
+
+    /* section.about-me {
+        margin-top: 8rem;
+    }
+
+    section.about-me img {
+        height: 20rem;
+    }
+
+    section.about-me .abt-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.about-me .abt-txt h3 {
+        font-size: 1.2rem;
+        margin: auto;
+    }
+
+    section.about-me .abt-txt p {
+        font-size: 0.5rem;
+        margin: auto;
+    }
+    a#abt-cta{
+        margin: auto;
+
+    } */
+
+    /* -----------------------------------------
+Mobile Responsive Softwares Responsive
+----------------------------------------- */
+    /* section.softwares {
+        margin-top: 3rem;
+    }
+    section.softwares p{
+        font-size: 0.7rem;
+        margin-top: -1rem;
+    }
+
+    section.softwares img {
+        display: none;
+    } */
+
+    /* -----------------------------------------
+Mobilee responsive testimonials Responsive
+----------------------------------------- */
+    /* section.testimonials .container .client img {
+        height: 8rem;
+    }
+    section.testimonials .container .client .txt h3{
+        font-size: 0.65rem;
+    }
+    section.testimonials .container .client .txt p{
+        font-size: 0.5rem;
+    } */
+    /* -----------------------------------------
+Mobile Responsive FAQs Responsive
+----------------------------------------- */
+/* .accordion {
+    padding: 1rem 1.5rem;
+}
+.accordion i {
+    font-size: 1rem;
+
+}
+section.qns-ans button{
+    font-size: 0.7rem;
+}
+.pannel {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    margin-top: -.5rem;
+
+}
+section.qns-ans .pannel p{
+    font-size: 0.6rem;
+    
+}
+} */
+
+/* -----------------------------------------
+Small Mobile Responsive
+----------------------------------------- */
+/* @media (max-width: 489px) {
+
+    section.hero .hero-img img {
+        height: 15rem;
+    }
+
+    section.hero .hero-txt h1 {
+        font-size: 1.5rem;
+    }
+
+    section.hero .hero-txt p {
+        font-size: 0.7rem;
+    }
+
+    section.hero .hero-txt .icons img {
+        height: 1.5rem;
+        margin-top: -.5rem;
+    } */
+
+    
+
+    /* -----------------------------------------
+Small Mobile Responsive about Responsive
+----------------------------------------- */
+    /* section.about-me {
+        margin-top: 8rem;
+    }
+
+    section.about-me img {
+        height: 17rem;
+    }
+
+    section.about-me .abt-container {
+        flex-direction: column;
+    }
+
+    section.about-me .abt-txt h3 {
+        font-size: 1.2rem;
+    }
+
+    section.about-me .abt-txt p {
+        font-size: 0.5rem;
+
+    } */
+
+    /* -----------------------------------------
+Small Mobile  Responsive Softwares Responsive
+----------------------------------------- */
+    /* section.softwares {
+        margin-top: 3rem;
+    }
+
+    section.softwares img {
+        width: 40px;
+        height: 39px;
+    } */
+
+    /* -----------------------------------------
+ Small Mobile Responsive testimonials Responsive
+----------------------------------------- */
+/* section.testimonials .container{
+    flex-direction: column;
+    align-items: center;
+}
+section.testimonials .container .client img {
+    height: 15rem;
+}
+section.testimonials .container .client .txt h3{
+    font-size: 1.8rem;
+    width: 15rem;
+}
+section.testimonials .container .client .txt p{
+    font-size: 0.7rem;
+} */
+/* -----------------------------------------
+ Small Mobile Responsive FAQs Responsive
+----------------------------------------- */
+
+/* .accordion {
+    padding: 0.7rem 1.4rem;
+}
+.accordion i {
+    font-size: 0.7rem;
+
+}
+section.qns-ans button{
+    font-size: 0.5rem;
+}
+.pannel {
+    padding: 0 0.7rem 0 0.7rem;
+    margin-bottom: 1rem;
+    margin-top: -.5rem;
+
+}
+section.qns-ans .pannel p{
+    font-size: 0.4rem;
+    
+}
+} */

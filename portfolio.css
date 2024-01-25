@@ -1,0 +1,90 @@
+.hero{
+    height: calc(50vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero h1{
+    font-family: "poppins";
+    font-size: 2rem;
+}
+
+/* -----------------------------------------
+insta projects header Section
+----------------------------------------- */
+.instaprojects-header{
+    display: flex;
+    padding: 1.5rem 7rem;
+}
+.instaprojects-header img{
+    height: 3rem;
+}
+.instaprojects-header .txt{
+    margin-left: 1rem;
+}
+.instaprojects-header h2{
+    font-weight: 700;
+    text-align: left;
+    margin-top: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+.instaprojects-header p{
+    font-weight: 500;
+}
+/* -----------------------------------------
+insta projects
+----------------------------------------- */
+.insta-projects {
+    margin:3rem 7rem 0 7rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 3rem; 
+}
+
+.insta-project {
+    grid-column: span 2;
+}
+
+
+/* Ctaaaaas */
+/* Ctaaaaaaaaaaaaaaaaaaaaaaaaaa */
+.ctas{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.ctas a#filled-cta {
+    font-weight: 700;
+    padding: 0.7rem 1.4rem;
+    border-radius: 70rem;
+    border: 0.2rem solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: black;
+    margin-right: 1rem;
+    box-shadow: 2px 2px 3px black;
+}
+.ctas a#filled-cta:hover{
+    box-shadow: none;
+    transition: all ease-in-out 0.3s;
+
+
+}
+
+.ctas a#cta {
+    font-weight: 700;
+    padding: 0.7rem 1.4rem;
+    border-radius: 70rem;
+    border: 0.2rem solid rgb(44, 47, 44);
+    color: black;
+    box-shadow: 2px 2px 3px black;
+
+}
+.ctas a#cta:hover{
+    border: 0.2rem solid rgb(0, 0, 0);
+    background-color: black;
+    color: white;
+    
+    transition: all ease-in-out 0.3s;
+}
+
