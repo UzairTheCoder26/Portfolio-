@@ -32,6 +32,74 @@ insta projects header Section
     font-weight: 500;
 }
 /* -----------------------------------------
+Insta Heading Responsive Insta Heading Section
+----------------------------------------- */
+@media (max-width:1250px) {
+    .instaprojects-header{
+        padding: 1.5rem 4rem;
+    }
+    }
+    @media (max-width:1000px) {
+        .instaprojects-header img{
+            height: 2.5rem;
+        }
+        .instaprojects-header h2{
+            font-size: 1.2rem;
+        }
+        .instaprojects-header p{
+            font-size: 0.8rem;
+        }
+        }
+        @media (max-width:800px) {
+            .hero{
+                height: 17rem;
+            }
+            .hero h1{
+                font-size: 1.5rem;
+            }
+            .instaprojects-header h2{
+                font-size: 1rem;
+            }
+            .instaprojects-header p{
+                font-size: 0.6rem;
+            }
+            }
+            @media (max-width:550px) {
+                .hero{
+                    height: 10rem;
+                }
+                .hero h1{
+                    font-size: 1rem;
+                }
+                .instaprojects-header img{
+                    height: 2rem;
+                }
+                .instaprojects-header h2{
+                    font-size: 0.8rem;
+                }
+                .instaprojects-header p{
+                    font-size: 0.6rem;
+                }
+                }
+                @media (max-width:370px) {
+                    .hero{
+                        height: 8rem;
+                    }
+                    .hero h1{
+                        font-size: 0.8rem;
+                    }
+                    .instaprojects-header img{
+                        height: 1.5rem;
+                    }
+                    .instaprojects-header h2{
+                        font-size: 0.6rem;
+                    }
+                    .instaprojects-header p{
+                        font-size: 0.4rem;
+                    }
+                    }
+    
+/* -----------------------------------------
 insta projects
 ----------------------------------------- */
 .insta-projects {
@@ -44,7 +112,48 @@ insta projects
 .insta-project {
     grid-column: span 2;
 }
-
+/* -----------------------------------------
+Projects Responsive Projects Section
+----------------------------------------- */
+@media (max-width:1250px) {
+    .insta-projects {
+        margin:3rem 4rem 0 4rem;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); 
+        gap: 3rem; 
+    }
+    
+    .insta-project {
+        grid-column: span 2;
+    }
+    }
+    @media (max-width:1140px) {
+        .insta-project {
+            grid-column: span 3;
+        }
+        }
+        @media (max-width:780px) {
+            .insta-projects {
+                margin:3rem 4rem 0 4rem;
+                display: grid;
+                grid-template-columns: repeat(6, 1fr); 
+                gap: 3rem; 
+            }
+            
+            .insta-project {
+                grid-column: span 8;
+                margin: auto;
+            }
+            }
+            @media (max-width:460px) {
+                .insta-projects {
+                    margin:3rem 0 0 0;
+                }
+                
+              
+     
+                }
+            
 
 /* Ctaaaaas */
 /* Ctaaaaaaaaaaaaaaaaaaaaaaaaaa */

@@ -20,12 +20,14 @@
 }
 
 /* -----------------------------------------
-Example Section
+Contact Section
 ----------------------------------------- */
 .contact-details{
     display: flex;
     justify-content: center;
     gap: 4rem;
+    flex-wrap: wrap;
+    margin: 0 3rem 3rem 3rem;
 }
 .contact-details .method{
     display: flex;
@@ -86,8 +88,77 @@ font-size: 1.5rem;
     font-weight: 600;
     margin-top: 0.2rem;
 }
+/* -----------------------------------------
+Responsive Contact Section
+----------------------------------------- */
+@media (max-width:1114px) {
+    .hero h1{
+        font-size: 3rem;
+        margin-bottom: 0.6rem;
+    }
+    .hero h3{
+        font-size: 0.8rem;
+    }
+    .hero p{
+        font-size: 0.7rem;
+    }
+    
+}
+@media (max-width:763px) {
+    .hero h1{
+        font-size: 2rem;
+        margin-bottom: 0.4rem;
+    }
+    .hero h3{
+        font-size: 0.6rem;
+    }
+    .hero p{
+        font-size: 0.5rem;
+    }
+    .contact-details{
+        margin-top: -4rem;
+    }
+    
+}
+@media (max-width:500px) {
+    .hero h1{
+        font-size: 1.25rem;
+    }
+    .hero h3{
+        font-size: 0.6rem;
+    }
+    .hero p{
+        font-size: 0.4rem;
+    }
+    .contact-details{
+        margin-top: -5rem;
+    }
+    
+}
+@media (max-width:400px) {
+    .contact-details{
+        gap: 2rem;
+        margin: -2rem 1rem 3rem 1rem;
+    }
+    .contact-details .method{
+        scale: 0.9;
+    padding: 1rem 3rem;
 
+    }
+    .contact-details{
+        margin-top: -6.5rem;
+    }
+    .contact-details a{
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
 
+    }
+    .contact-details p{
+        font-size: 0.7rem;
+    }
+    
+    
+}
 /* Ctaaaaas */
 /* Ctaaaaaaaaaaaaaaaaaaaaaaaaaa */
 .ctas{
@@ -129,17 +200,3 @@ font-size: 1.5rem;
     
     transition: all ease-in-out 0.3s;
 }
-/* -----------------------------------------
-Responsive
------------------------------------------ */
-/* @media(max-width: 1100px) {
-    header{
-        display: none;
-    }
-    main{
-        display: none;
-    }
-    footer{
-        display: none;
-    }
-    } */
