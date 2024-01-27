@@ -1,10 +1,11 @@
-.hero{
+.hero {
     height: calc(50vh);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.hero h1{
+
+.hero h1 {
     font-family: "poppins";
     font-size: 2rem;
 }
@@ -12,157 +13,190 @@
 /* -----------------------------------------
 insta projects header Section
 ----------------------------------------- */
-.instaprojects-header{
+.instaprojects-header {
     display: flex;
     padding: 1.5rem 7rem;
 }
-.instaprojects-header img{
+
+.instaprojects-header img {
     height: 3rem;
 }
-.instaprojects-header .txt{
+
+.instaprojects-header .txt {
     margin-left: 1rem;
 }
-.instaprojects-header h2{
+
+.instaprojects-header h2 {
     font-weight: 700;
     text-align: left;
     margin-top: 0.4rem;
     margin-bottom: 0.5rem;
 }
-.instaprojects-header p{
+
+.instaprojects-header p {
     font-weight: 500;
 }
+
 /* -----------------------------------------
 Insta Heading Responsive Insta Heading Section
 ----------------------------------------- */
 @media (max-width:1250px) {
-    .instaprojects-header{
+    .instaprojects-header {
         padding: 1.5rem 4rem;
     }
+}
+
+@media (max-width:1000px) {
+    .instaprojects-header img {
+        height: 2.5rem;
     }
-    @media (max-width:1000px) {
-        .instaprojects-header img{
-            height: 2.5rem;
-        }
-        .instaprojects-header h2{
-            font-size: 1.2rem;
-        }
-        .instaprojects-header p{
-            font-size: 0.8rem;
-        }
-        }
-        @media (max-width:800px) {
-            .hero{
-                height: 17rem;
-            }
-            .hero h1{
-                font-size: 1.5rem;
-            }
-            .instaprojects-header h2{
-                font-size: 1rem;
-            }
-            .instaprojects-header p{
-                font-size: 0.6rem;
-            }
-            }
-            @media (max-width:550px) {
-                .hero{
-                    height: 10rem;
-                }
-                .hero h1{
-                    font-size: 1rem;
-                }
-                .instaprojects-header img{
-                    height: 2rem;
-                }
-                .instaprojects-header h2{
-                    font-size: 0.8rem;
-                }
-                .instaprojects-header p{
-                    font-size: 0.6rem;
-                }
-                }
-                @media (max-width:370px) {
-                    .hero{
-                        height: 8rem;
-                    }
-                    .hero h1{
-                        font-size: 0.8rem;
-                    }
-                    .instaprojects-header img{
-                        height: 1.5rem;
-                    }
-                    .instaprojects-header h2{
-                        font-size: 0.6rem;
-                    }
-                    .instaprojects-header p{
-                        font-size: 0.4rem;
-                    }
-                    }
-    
+
+    .instaprojects-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .instaprojects-header p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:800px) {
+    .hero {
+        height: 17rem;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .instaprojects-header h2 {
+        font-size: 1rem;
+    }
+
+    .instaprojects-header p {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width:550px) {
+    .hero {
+        height: 10rem;
+    }
+
+    .hero h1 {
+        font-size: 1rem;
+    }
+
+    .instaprojects-header img {
+        height: 2rem;
+    }
+
+    .instaprojects-header h2 {
+        font-size: 0.8rem;
+    }
+
+    .instaprojects-header p {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width:380px) {
+    .hero {
+        height: 8rem;
+    }
+
+    .hero h1 {
+        font-size: 1rem;
+        width: 60%;
+        text-align: center;
+    }
+    .instaprojects-header {
+        padding: 1.5rem 2rem;
+    }
+
+    .instaprojects-header img {
+        height: 1.5rem;
+    }
+
+    .instaprojects-header h2 {
+        font-size: 0.8rem;
+        margin-top: 0.2rem;
+    }
+
+    .instaprojects-header p {
+        font-size: 0.7rem;
+    }
+}
+
 /* -----------------------------------------
 insta projects
 ----------------------------------------- */
 .insta-projects {
-    margin:3rem 7rem 0 7rem;
+    margin: 3rem 7rem 0 7rem;
     display: grid;
-    grid-template-columns: repeat(6, 1fr); 
-    gap: 3rem; 
+    grid-template-columns: repeat(6, 1fr);
+    gap: 3rem;
 }
 
 .insta-project {
     grid-column: span 2;
 }
+
 /* -----------------------------------------
 Projects Responsive Projects Section
 ----------------------------------------- */
 @media (max-width:1250px) {
     .insta-projects {
-        margin:3rem 4rem 0 4rem;
+        margin: 3rem 4rem 0 4rem;
         display: grid;
-        grid-template-columns: repeat(6, 1fr); 
-        gap: 3rem; 
+        grid-template-columns: repeat(6, 1fr);
+        gap: 3rem;
     }
-    
+
     .insta-project {
         grid-column: span 2;
     }
+}
+
+@media (max-width:1140px) {
+    .insta-project {
+        grid-column: span 3;
     }
-    @media (max-width:1140px) {
-        .insta-project {
-            grid-column: span 3;
-        }
-        }
-        @media (max-width:780px) {
-            .insta-projects {
-                margin:3rem 4rem 0 4rem;
-                display: grid;
-                grid-template-columns: repeat(6, 1fr); 
-                gap: 3rem; 
-            }
-            
-            .insta-project {
-                grid-column: span 8;
-                margin: auto;
-            }
-            }
-            @media (max-width:460px) {
-                .insta-projects {
-                    margin:3rem 0 0 0;
-                }
-                
-              
-     
-                }
-            
+}
+
+@media (max-width:780px) {
+    .insta-projects {
+        margin: 3rem 4rem 0 4rem;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 3rem;
+    }
+
+    .insta-project {
+        grid-column: span 8;
+        margin: auto;
+    }
+}
+
+@media (max-width:460px) {
+    .insta-projects {
+        margin: 3rem 0 0 0;
+    }
+
+
+
+}
+
 
 /* Ctaaaaas */
 /* Ctaaaaaaaaaaaaaaaaaaaaaaaaaa */
-.ctas{
+.ctas {
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin-top: 3rem;
 }
+
 .ctas a#filled-cta {
     font-weight: 700;
     padding: 0.7rem 1.4rem;
@@ -173,7 +207,8 @@ Projects Responsive Projects Section
     margin-right: 1rem;
     box-shadow: 2px 2px 3px black;
 }
-.ctas a#filled-cta:hover{
+
+.ctas a#filled-cta:hover {
     box-shadow: none;
     transition: all ease-in-out 0.3s;
 
@@ -189,11 +224,11 @@ Projects Responsive Projects Section
     box-shadow: 2px 2px 3px black;
 
 }
-.ctas a#cta:hover{
+
+.ctas a#cta:hover {
     border: 0.2rem solid rgb(0, 0, 0);
     background-color: black;
     color: white;
-    
+
     transition: all ease-in-out 0.3s;
 }
-

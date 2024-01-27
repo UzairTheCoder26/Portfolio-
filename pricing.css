@@ -18,7 +18,6 @@
 .hero p{
     font-size: 0.9rem;
 }
-
 /* -----------------------------------------
 Pricing Box Section
 ----------------------------------------- */
@@ -134,13 +133,13 @@ Responsive Pricing Box Section
         margin-bottom: 3rem;
     }
     .hero h1{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .hero h3{
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
     .hero p{
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
     .pricing-boxes{
         margin: 0 2rem;
