@@ -227,13 +227,6 @@ CTA Responsiveness
   }
 }
 @media (max-width:500px){
-  .ctas a{
-    padding: 0.4rem 0.8rem !important;
-    font-size: 0.5rem;
-    border: 2px solid black !important;
-  }
-}
-@media (max-width:380px){
   .ctas{
     gap:0;
   }
