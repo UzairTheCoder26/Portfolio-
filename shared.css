@@ -31,6 +31,7 @@ header {
     left: 0;
     background-color: white;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    z-index: 10;
 }
 
 nav {
@@ -74,6 +75,9 @@ nav .toggle-btn {
   /*--------------------------
 # SideBar For Tab And Mobiles
 -----------------------------*/
+.toggle-btn i{
+  color: #000000 !important;
+}
 
 .sidebar-menu {
     display: block;
@@ -285,6 +289,9 @@ footer{
   footer{
     height: 12rem;
   }
+  footer .icons {
+    gap: 0.6rem;
+}
   footer img{
     height: 1rem !important;
   }
