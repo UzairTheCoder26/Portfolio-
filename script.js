@@ -4,7 +4,7 @@
     const toggleBtn = document.querySelector(".toggle-btn");
     const toggleBtnIcon = document.querySelector(".toggle-btn i");
     const sideBarMenu = document.querySelector(".sidebar-menu");
-    const overlay = document.querySelector(".overlay");
+    const overlay = document.getElementById("overlay");
 
     toggleBtn.addEventListener("click", function () {
         sideBarMenu.classList.toggle("open");

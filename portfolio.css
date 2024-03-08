@@ -1,191 +1,393 @@
-.hero {
-    height: calc(50vh);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* ----------------------------------------------------
+Portfolio Section
+---------------------------------------------------- */
+*{
+    --primary-color: #ffb302;
 }
-
-.hero h1 {
+.portfolio pre {
+    width: max-content;
+    margin: auto;
     font-family: "poppins";
-    font-size: 2rem;
+    font-size: 3.75rem;
+    font-weight: 600;
+    line-height: 140%;
+    height: max-content;
+    margin-top: 0rem;
+    margin-bottom: 8rem;
 }
 
-/* -----------------------------------------
-insta projects header Section
------------------------------------------ */
-.instaprojects-header {
-    display: flex;
-    padding: 1.5rem 7rem;
-}
-
-.instaprojects-header img {
-    height: 3rem;
-}
-
-.instaprojects-header .txt {
-    margin-left: 1rem;
-}
-
-.instaprojects-header h2 {
+.portfolio pre span {
+    font-size: 5rem;
     font-weight: 700;
-    text-align: left;
-    margin-top: 0.4rem;
-    margin-bottom: 0.5rem;
+    color: var(--primary-color);
 }
 
-.instaprojects-header p {
+.portfolio p {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: -4rem;
     font-weight: 500;
+    margin-bottom: 5rem;
 }
 
-/* -----------------------------------------
-Insta Heading Responsive Insta Heading Section
------------------------------------------ */
-@media (max-width:1250px) {
-    .instaprojects-header {
-        padding: 1.5rem 4rem;
+/* Videos  */
+.portfolio .portfolio-vids {
+    width: 90%;
+    margin: auto;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+
+
+.portfolio .portfolio-vids .portfolio-vid {
+    width: 15rem;
+    border-radius: 1rem;
+    border: 1.8px solid #f3d89b;
+    padding: 0.5rem;
+    background-color: #f3d89b;
+}
+.portfolio .portfolio-vids .portfolio-vid iframe{
+    border-radius: 5px;
+}
+
+.portfolio .portfolio-vid.first-left-one {
+    position: relative;
+    top: -13rem;
+    transform: rotate(-5deg);
+}
+
+.portfolio .portfolio-vid.second-left-one {
+    position: relative;
+    top: -1rem;
+    transform: rotate(-3deg);
+
+}
+
+.portfolio .portfolio-vid.second-right-one {
+    position: relative;
+    top: -1rem;
+    transform: rotate(3deg);
+
+}
+
+.portfolio .portfolio-vid.first-right-one {
+    position: relative;
+    top: -13rem;
+    transform: rotate(5deg);
+
+}
+
+.portfolio .portfolio-vids .portfolio-vid .portfolio-actual-vid {
+    border-radius: 0.5rem;
+}
+/* Other Videos  */
+.portfolio .other-vids {
+    width: 90%;
+    margin: auto;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+.portfolio .other-vids .portfolio-vid {
+    width: 15rem;
+    border-radius: 1rem;
+    border: 1.8px solid #f3d89b ;
+
+    padding: 0.5rem;
+    background-color: #f3d89b;
+}
+.portfolio .other-vids .portfolio-vid iframe{
+    border-radius: 5px;
+}
+/* ----------------------------------------------------
+Responsive Portfolio Section
+---------------------------------------------------- */
+/* ---------------------------
+Big Screens
+--------------------------- */
+@media (min-width: 1550px) {
+    .portfolio .portfolio-vids {
+        width: 72rem;
     }
 }
 
-@media (max-width:1000px) {
-    .instaprojects-header img {
-        height: 2.5rem;
+@media (max-width: 1300px) {
+
+    .portfolio pre {
+        font-size: 2.5rem;
+        line-height: 130%;
+        margin-bottom: 1rem;
     }
 
-    .instaprojects-header h2 {
-        font-size: 1.2rem;
+    .portfolio pre span {
+        font-size: 3rem;
     }
 
-    .instaprojects-header p {
-        font-size: 0.8rem;
+    .portfolio p {
+        font-size: 0.7rem;
+        margin-top: 0;
+        font-weight: 400;
+    }
+
+    /* Videos  */
+    .portfolio .portfolio-vids {
+        gap: 3.5rem;
+    }
+    .portfolio .other-vids {
+        gap: 3.5rem;
+    }
+
+
+    .portfolio .portfolio-vids .portfolio-vid {
+        width: 15rem;
+        border-radius: 0.75rem;
+        border: 1.5px solid #d1d1d1;
+        padding: 0.4rem;
+
+    }
+    .portfolio .other-vids .portfolio-vid {
+        width: 15rem;
+        border-radius: 0.75rem;
+        border: 1.5px solid #d1d1d1;
+        padding: 0.4rem;
+
+    }
+
+    .portfolio .portfolio-vids .portfolio-vid .portfolio-actual-vid {
+        border-radius: 0.5rem;
+    }
+    .portfolio .other-vids .portfolio-vid .portfolio-actual-vid {
+        border-radius: 0.5rem;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .portfolio pre {
+        font-size: 2rem;
+        line-height: 125%;
+    }
+
+    .portfolio pre span {
+        font-size: 2.5rem;
+    }
+
+    .portfolio p {
+        font-size: 0.6rem;
+        margin-top: 0;
+        font-weight: 300;
+    }
+
+    /* Videos  */
+    .portfolio .portfolio-vids {
+        gap: 2.5rem;
+    }
+    .portfolio .other-vids {
+        gap: 2.5rem;
+    }
+
+
+    .portfolio .portfolio-vids .portfolio-vid {
+        width: 12rem;
+        border-radius: 0.75rem;
+        padding: 0.25rem;
+
+    }
+    .portfolio .other-vids .portfolio-vid {
+        width: 12rem;
+        border-radius: 0.75rem;
+        padding: 0.25rem;
+
     }
 }
 
-@media (max-width:800px) {
-    .hero {
-        height: 17rem;
+@media (max-width: 750px) {
+    .portfolio pre {
+        font-size: 3rem;
+        line-height: 125%;
     }
 
-    .hero h1 {
+    .portfolio pre span {
+        font-size: 3.5rem;
+    }
+
+    .portfolio p {
+        font-size: 1rem;
+        margin-top: 0;
+        font-weight: 400;
+    }
+
+    /* Videos  */
+    .portfolio .portfolio-vids {
+        gap: 5rem;
+        flex-direction: column;
+align-items: center;
+
+    }
+    .portfolio .other-vids {
+        gap: 5rem;
+        flex-direction: column;
+align-items: center;
+
+    }
+
+
+    .portfolio .portfolio-vids .portfolio-vid {
+        width: 20rem;
+        border-radius: 0.75rem;
+        padding: 0.5rem;
+
+    }
+    .portfolio .other-vids .portfolio-vid {
+        width: 20rem;
+        border-radius: 0.75rem;
+        padding: 0.5rem;
+
+    }
+
+    .portfolio .portfolio-vid.first-left-one {
+        top: 0;
+        transform: rotate(-5deg);
+    }
+
+    .portfolio .portfolio-vid.second-left-one {
+        top: 0;
+        transform: rotate(5deg);
+
+    }
+
+    .portfolio .portfolio-vid.second-right-one {
+        top: 0;
+        transform: rotate(-5deg);
+
+
+    }
+
+    .portfolio .portfolio-vid.first-right-one {
+        top: 0;
+        transform: rotate(5deg);
+
+    }
+
+
+}
+
+@media (max-width: 650px) {
+    .portfolio pre {
+        font-size: 2rem;
+    }
+
+    .portfolio pre span {
+        font-size: 2.5rem;
+    }
+
+    .portfolio p {
+        font-size: 0.65rem;
+        margin-top: 0;
+        font-weight: 300;
+    }
+
+    /* Videos  */
+
+    .portfolio .portfolio-vids {
+        gap: 3rem;
+        margin: 0 auto 3rem auto;
+
+    }
+    .portfolio .other-vids {
+        gap: 3rem;
+        margin: 0 auto 3rem auto;
+
+    }
+
+
+    .portfolio .portfolio-vids .portfolio-vid {
+        width: 15rem;
+        border-radius: 0.75rem;
+        padding: 0.5rem;
+        z-index: 0;
+
+    }
+    .portfolio .other-vids .portfolio-vid {
+        width: 15rem;
+        border-radius: 0.75rem;
+        padding: 0.5rem;
+        z-index: 0;
+
+    }
+
+    .portfolio .portfolio-vid.first-left-one {
+        z-index:58 ;
+        top: 0;
+        transform: rotate(-3deg);
+    }
+
+    .portfolio .portfolio-vid.second-left-one {
+        top: 0;
+        transform: rotate(3deg);
+
+    }
+
+    .portfolio .portfolio-vid.second-right-one {
+        top: 0;
+        transform: rotate(-3deg);
+
+
+    }
+
+    .portfolio .portfolio-vid.first-right-one {
+        top: 0;
+        transform: rotate(3deg);
+
+    }
+
+}
+
+@media (max-width: 450px) {
+    .portfolio pre {
         font-size: 1.5rem;
     }
 
-    .instaprojects-header h2 {
-        font-size: 1rem;
+    .portfolio pre span {
+        font-size: 2rem;
     }
 
-    .instaprojects-header p {
-        font-size: 0.6rem;
-    }
-}
-
-@media (max-width:550px) {
-    .hero {
-        height: 10rem;
+    .portfolio p {
+        font-size: 0.5rem;
+        margin-top: 0;
+        font-weight: 300;
+        letter-spacing: 0.6px;
     }
 
-    .hero h1 {
-        font-size: 1rem;
+    /* Videos  */
+
+    .portfolio .portfolio-vids {
+        gap: 3rem;
     }
-
-    .instaprojects-header img {
-        height: 2rem;
-    }
-
-    .instaprojects-header h2 {
-        font-size: 0.8rem;
-    }
-
-    .instaprojects-header p {
-        font-size: 0.6rem;
-    }
-}
-
-@media (max-width:380px) {
-    .hero {
-        height: 8rem;
-    }
-
-    .hero h1 {
-        font-size: 1rem;
-        width: 60%;
-        text-align: center;
-    }
-    .instaprojects-header {
-        padding: 1.5rem 2rem;
-    }
-
-    .instaprojects-header img {
-        height: 1.5rem;
-    }
-
-    .instaprojects-header h2 {
-        font-size: 0.8rem;
-        margin-top: 0.2rem;
-    }
-
-    .instaprojects-header p {
-        font-size: 0.7rem;
-    }
-}
-
-/* -----------------------------------------
-insta projects
------------------------------------------ */
-.insta-projects {
-    margin: 3rem 7rem 0 7rem;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 3rem;
-}
-
-.insta-project {
-    grid-column: span 2;
-}
-
-/* -----------------------------------------
-Projects Responsive Projects Section
------------------------------------------ */
-@media (max-width:1250px) {
-    .insta-projects {
-        margin: 3rem 4rem 0 4rem;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
+    .portfolio .other-vids {
         gap: 3rem;
     }
 
-    .insta-project {
-        grid-column: span 2;
+
+    .portfolio .portfolio-vids .portfolio-vid {
+        width: 13rem;
+
+    }
+    .portfolio .other-vids .portfolio-vid {
+        width: 13rem;
+
     }
 }
 
-@media (max-width:1140px) {
-    .insta-project {
-        grid-column: span 3;
-    }
-}
-
-@media (max-width:780px) {
-    .insta-projects {
-        margin: 3rem 4rem 0 4rem;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        gap: 3rem;
-    }
-
-    .insta-project {
-        grid-column: span 8;
-        margin: auto;
-    }
-}
-
-@media (max-width:460px) {
-    .insta-projects {
-        margin: 3rem 0 0 0;
-    }
 
 
 
-}
 
 
 /* Ctaaaaas */
@@ -194,7 +396,7 @@ Projects Responsive Projects Section
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .ctas a#filled-cta {
